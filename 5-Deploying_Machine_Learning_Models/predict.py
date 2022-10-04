@@ -1,8 +1,9 @@
 import pickle
 from flask import request, Flask, jsonify
 
+model_file = 'model_C=1.0.bin'
 
-with open('output_file', 'rb') as f_in:
+with open(model_file, 'rb') as f_in:
     dv, model = pickle.load(f_in)
 
 app=Flask('churn')
