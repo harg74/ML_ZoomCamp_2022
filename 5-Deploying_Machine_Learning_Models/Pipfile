@@ -9,8 +9,10 @@ numpy = "*"
 scikit-learn = "==1.1.1"
 gunicorn = "*"
 requests = "*"
+awscli = "*"
 
 [dev-packages]
+awsebcli = "*"
 
 [requires]
 python_version = "3.10"
