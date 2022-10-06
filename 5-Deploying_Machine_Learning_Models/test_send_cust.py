@@ -4,7 +4,15 @@
 import requests
 
 #url = 'http://0.0.0.0:9696/predict'
-url = 'http://127.0.0.1:5000/predict'
+#this local hos was used when we are not using EB, this is for test locally
+#url = 'http://127.0.0.1:5000/predict'
+
+host = 'churn-serving-env.eba-igvcyijm.us-east-1.elasticbeanstalk.com'
+
+#we dont have to specify the port, since has implicit port 80
+#port 80 is the port that the server "listens to" or expects to receive from a Web client
+#EB will also internally map it to the churn service port 9696
+url = f'http://{host}/predict'
 
 
 customer_id = 'xyz-123'
