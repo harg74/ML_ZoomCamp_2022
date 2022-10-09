@@ -2,13 +2,13 @@ import pickle
 from flask import request, Flask, jsonify
 
 model_file = 'model1.bin'
-model_file2 = 'model2.bin'
+#model_file2 = 'model2.bin'
 dv_file = 'dv.bin'
 
 #with open(model_file, 'rb') as f_in:
 #    dv, model = pickle.load(f_in)
 
-with open(model_file2, 'rb') as model_in:
+with open(model_file, 'rb') as model_in:
     model = pickle.load(model_in)
 with open(dv_file, 'rb') as dv_in:
     dv = pickle.load(dv_in)
