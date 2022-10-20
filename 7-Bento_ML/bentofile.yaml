@@ -1,0 +1,10 @@
+service: "service.py:svc"
+labels:
+  owner: hr
+  project: loan_classifier
+include:
+  - "*.py"
+python:
+  packages:
+    - xgboost
+    - sklearn
