@@ -19,7 +19,7 @@ class CreditApplication(BaseModel):
     amount: int
     price: int
 
-model_ref = bentoml.xgboost.get("credit_risk_model:qnvlhxsqdwqk5ahg")
+model_ref = bentoml.xgboost.get("credit_risk_model:rqnhdqcq6gogzahg")
 dv = model_ref.custom_objects['dictVectorizer']
 #runner is the bento mls abstraction for the model itself
 #allow us to scale the model separately from the rest
