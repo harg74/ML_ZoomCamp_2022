@@ -1,0 +1,10 @@
+service: service.py:svc
+labels:
+  owner: hr
+  project: passing_arrays
+include:
+  - "*.py"
+python:
+  packages:
+    - numpy
+    - sklearn
