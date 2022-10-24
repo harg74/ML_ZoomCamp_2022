@@ -9,7 +9,7 @@ model_runner = model_ref.to_runner()
 svc = bentoml.Service("mlzoomcamp_homework", runners=[model_runner])
 
 @svc.api(input=NumpyNdarray(), output=NumpyNdarray())
-def classify(input_series: np.ndarray) -> np.ndarray:
+def classy(input_series: np.ndarray) -> np.ndarray:
     result = model_runner.predict.run(input_series)
     print(f'---> this is the prediction: {result[0]}')
     return result[0]
