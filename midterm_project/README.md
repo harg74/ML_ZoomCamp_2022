@@ -35,4 +35,4 @@ You can test it into your own machine by getting the docker image [Have installe
 
 You can see a short demo of this car price prediction model deployed in AWS.
 
-https://youtu.be/PYBRlv7psTQ
+[![video](resources/video.png)](https://youtu.be/PYBRlv7psTQ)
