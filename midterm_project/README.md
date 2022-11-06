@@ -49,9 +49,9 @@ By scrolling down you will find the **Service APIs**, click on the POST /predict
 
 Copy and paste the below code in the Request body and click on execute
 
-![service3](resources/service3.png)
-
 `{ "levy": 500.0, "manufacturer": "bmw", "model": "118_2,0", "prod_year": 2015, "category": "hatchback", "leather_interior": "yes", "fuel_type": "diesel", "engine_volume": 2.0, "mileage": 18000, "cylinders": 4.0, "gear_box_type": "manual", "drive_wheels": "rear", "doors": 4, "wheel": "left_wheel", "color": "beige", "airbags": 10, "turbo": "turbo" }`
+
+![service3](resources/service3.png)
 
 You will get the price predicted based on the fetures we passed to the model
 
