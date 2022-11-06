@@ -33,7 +33,7 @@ You can test it into your own machine by getting the docker image [humbert1/car-
 
 ## Using the service
 
-You can use this API by opening [http://localhost:3000)](http://localhost:3000)
+You can use this API by opening [http://localhost:3000](http://localhost:3000) after starting the service.
 
 ![service1](resources/service1.png)
 
