@@ -29,7 +29,7 @@ You can test it into your own machine by getting the docker image [humbert1/car-
 
 ## Start the service
 
-`docker run -it --rm -p 3000:3000 humberto1/car-price-prediction serve --production`
+`docker run -it --rm -p 3000:3000 humbert1/car-price-prediction:latest serve --production`
 
 ## Deployment in AWS
 
