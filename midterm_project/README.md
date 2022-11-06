@@ -17,7 +17,7 @@ The model was built with BentoML, which is an abstraction to pack different Mach
 
 ## Running the model
 
-You can test it into your own machine by getting the docker image [Have installed Docker](https://hub.docker.com/repository/docker/humbert1/car-price-prediction) and run it locally.
+You can test it into your own machine by getting the docker image [humbert1/car-price-prediction](https://hub.docker.com/repository/docker/humbert1/car-price-prediction) and run it locally.
 
 ### Prerequisites
 
