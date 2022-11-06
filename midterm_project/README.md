@@ -31,12 +31,6 @@ You can test it into your own machine by getting the docker image [humbert1/car-
 
 `docker run -it --rm -p 3000:3000 humbert1/car-price-prediction:latest serve --production`
 
-## Deployment in AWS
-
-You can see a short demo of this car price prediction model deployed in AWS.
-
-[![video](resources/video.png)](https://youtu.be/PYBRlv7psTQ)
-
 ## Using the service
 
 You can use this API by opening [http://localhost:3000)](http://localhost:3000)
@@ -56,3 +50,9 @@ Copy and paste the below code in the Request body and click on execute
 You will get the price predicted based on the fetures we passed to the model
 
 ![service4](resources/service4.png)
+
+## Deployment in AWS
+
+You can see a short demo of this car price prediction model deployed in AWS.
+
+[![video](resources/video.png)](https://youtu.be/PYBRlv7psTQ)
