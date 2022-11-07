@@ -21,7 +21,7 @@ You can test it into your own machine by getting the docker image [humbert1/car-
 
 ### Prerequisites
 
-- [Have installed Docker](https://docs.docker.com/get-docker/)
+- [Have Docker installed](https://docs.docker.com/get-docker/)
 
 ## Downloading the image
 
