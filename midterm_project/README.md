@@ -11,9 +11,62 @@ This way, we were able to evaluate the best possible score/accuracy while predic
 
 If you are interested, you can get the dataset here: [Car Price Prediction Dataset](https://www.kaggle.com/datasets/deepcontractor/car-price-prediction-challenge).
 
-## How the model was built
+## How the model was built and containerized
 
-The model was built with BentoML, which is an abstraction to pack different Machine Learning components into one deployable unit.
+The model was built with BentoML, which is an abstraction to pack different Machine Learning components into one deployable unit. you can `pip install bentoml` to install it. You can visit: [BentoML](https://docs.bentoml.org/en/latest/index.html) for further details.
+
+In order to build your model with BentoML you need to run in your code of your final selected model the following lines:
+
+`bentoml.sklearn.save_model("car_price_prediction", model, custom_objects={ "dictVectorizer": dv }) bentoml.sklearn.save_model("car_price_prediction", model, custom_objects={ "dictVectorizer": dv }) `
+
+This will provide a model with a tag which will be used to build our bento image and docker image.
+
+![bento_model_tag](/resources/model_tag.png)
+
+Before we can build our images, we need to create a bentofile.yaml specifiying the following:
+
+- service: "service.py:svc" -> Determine the entry point and the variable name for the service. We wont have to specify it anymore since we have called it out in the service.
+
+- labels: key value pair specify anything that is valuable to your and your business of what is involved in this bento.
+
+  - owner: hr
+  - project: default-prediction
+
+- include: which files you want to include/pull in with your bento and which don't specially if your bento is part of a larger repo.
+
+  - "\*.py"
+
+- python: which python packages you need for your service.
+  - packages:
+    - xgboost
+    - sklearn
+
+![bento_model_tag](/resources/bentofile.png)
+
+Now we can build our images, from the CLI type:
+
+`bentoml build`
+
+![bento_build](/resources/build.png)
+
+This deployable includes all the things that we are going to need for a service in one single place, so when we containerize it you have a single image that you can deploy into a lot of different environments including:
+
+- README files ->
+- openapi.yaml -> which is the spec that enables you to have the Swagger UI
+- bento.yaml -> the file that glues everything together
+- Dockerfile
+- python requirements
+- models -> where it shows our custom objects, where the DictVectorizer is stored
+
+Now we can build our Docker image:
+
+`bentoml containerize <tag of your previous BentoML deployable you built>`
+
+![bento_containerize](/resources/containerize.png)
+
+When it finishes, it will provide your Docker image with a command to run it. from your terminal run it: docker run -it --rm -p 3000:3000 credit_risk_classifier:dhwfcmspag6llahg
+
+![runit](/resources/runit.png)
 
 ## Running the model
 
