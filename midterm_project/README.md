@@ -21,7 +21,7 @@ In order to build your model with BentoML you need to run in your code of your f
 
 This will provide a model with a tag which will be used to build our bento image and docker image.
 
-![bento_model_tag](/resources/model_tag.png)
+![bento_model_tag](resources/model_tag.png)
 
 Before we can build our images, we need to create a bentofile.yaml specifiying the following:
 
@@ -41,13 +41,13 @@ Before we can build our images, we need to create a bentofile.yaml specifiying t
     - xgboost
     - sklearn
 
-![bento_model_tag](/resources/bentofile.png)
+![bento_model_tag](resources/bentofile.png)
 
 Now we can build our images, from the CLI type:
 
 `bentoml build`
 
-![bento_build](/resources/build.png)
+![bento_build](resources/build.png)
 
 This deployable includes all the things that we are going to need for a service in one single place, so when we containerize it you have a single image that you can deploy into a lot of different environments including:
 
@@ -62,11 +62,11 @@ Now we can build our Docker image:
 
 `bentoml containerize <tag of your previous BentoML deployable you built>`
 
-![bento_containerize](/resources/containerize.png)
+![bento_containerize](resources/containerize.png)
 
 When it finishes, it will provide your Docker image with a command to run it. from your terminal run it: docker run -it --rm -p 3000:3000 credit_risk_classifier:dhwfcmspag6llahg
 
-![runit](/resources/runit.png)
+![runit](resources/runit.png)
 
 ## Running the model
 
