@@ -15,11 +15,11 @@ If you are interested, you can get the dataset here: [Car Price Prediction Datas
 
 The model was built with BentoML, which is an abstraction to pack different Machine Learning components into one deployable unit. you can `pip install bentoml` to install it. You can visit: [BentoML](https://docs.bentoml.org/en/latest/index.html) for further details.
 
-In order to build your model with BentoML you need to run in your code of your final selected model the following lines:
+In order to build your model with BentoML import bentoml and run in your code of your final selected model the following lines:
 
-`bentoml.sklearn.save_model("car_price_prediction", model, custom_objects={ "dictVectorizer": dv }) bentoml.sklearn.save_model("car_price_prediction", model, custom_objects={ "dictVectorizer": dv }) `
+`bentoml.sklearn.save_model("car_price_prediction", model, custom_objects={ "dictVectorizer": dv })`
 
-This will provide a model with a tag which will be used to build our bento image and docker image.
+This will provide a model with a tag which will be used to build our bento image and docker image:
 
 ![bento_model_tag](resources/model_tag.png)
 
@@ -64,7 +64,7 @@ Now we can build our Docker image:
 
 ![bento_containerize](resources/containerize.png)
 
-When it finishes, it will provide your Docker image with a command to run it. from your terminal run it: docker run -it --rm -p 3000:3000 credit_risk_classifier:dhwfcmspag6llahg
+When it finishes, it will provide your Docker image with a command to run it. from your terminal run it: `docker run -it --rm -p 3000:3000 <tag of your containerized image>`
 
 ![runit](resources/runit.png)
 
