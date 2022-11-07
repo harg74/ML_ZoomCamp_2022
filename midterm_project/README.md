@@ -49,7 +49,7 @@ Now we can build our images, from the CLI type:
 
 ![bento_build](resources/build.png)
 
-This deployable includes all the things that we are going to need for a service in one single place, so when we containerize it you have a single image that you can deploy into a lot of different environments including:
+This deployable includes all the things that we are going to need for a service in one single place, so when we containerize it you have a single image that you can deploy into a lot of different environments. This deployable includes:
 
 - README files ->
 - openapi.yaml -> which is the spec that enables you to have the Swagger UI
