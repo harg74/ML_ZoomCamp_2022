@@ -39,7 +39,9 @@ def predict(url):
     interpreter.invoke()
     preds = interpreter.get_tensor(output_index)
 
-    return dict(zip(classes, preds[0]))
+    float_predictions = preds[0].tolist() 
+
+    return dict(zip(classes, float_predictions))
 
 def lambda_handler(event, context):
     #accessing to value of 'url' key of the dictionary named event
