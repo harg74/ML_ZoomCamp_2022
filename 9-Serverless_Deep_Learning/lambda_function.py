@@ -28,7 +28,7 @@ classes = [
 ]
 
 #get the data
-url = 'http://bit.ly/mlbookcamp-pants'
+#url = 'http://bit.ly/mlbookcamp-pants'
 
 def predict(url):
     #we can also load it by path instead by url
@@ -40,3 +40,12 @@ def predict(url):
     preds = interpreter.get_tensor(output_index)
 
     return dict(zip(classes, preds[0]))
+
+def lambda_handler(event, context):
+    #accessing to value of 'url' key of the dictionary named event
+    url = event['url']
+
+    result = predict(url)
+
+    return result
+
