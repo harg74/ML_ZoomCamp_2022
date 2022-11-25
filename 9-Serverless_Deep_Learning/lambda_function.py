@@ -45,6 +45,7 @@ def predict(url):
 
 def lambda_handler(event, context):
     #accessing to value of 'url' key of the dictionary named event
+    #what will read from test.py is data = {'url':'http://bit.ly/mlbookcamp-pants'}
     url = event['url']
 
     result = predict(url)
