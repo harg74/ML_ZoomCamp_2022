@@ -2,8 +2,6 @@
 # coding: utf-8
 import  grpc
 
-import tensorflow as tf
-
 from tensorflow_serving.apis import predict_pb2
 from tensorflow_serving.apis import prediction_service_pb2_grpc
 
@@ -75,8 +73,7 @@ def predict_endopint():
     return jsonify(result)
 
 if __name__ =='__main__':
-    #app.run(debug=True)
     app.run(debug=True, host='0.0.0.0', port=9696)
-    # url = url = 'http://bit.ly/mlbookcamp-pants'
-    # response = predict(url)
-    # print(response)
+    #url = url = 'http://bit.ly/mlbookcamp-pants'
+    #response = predict(url)
+    #print(response)

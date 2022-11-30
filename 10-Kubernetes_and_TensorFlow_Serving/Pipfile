@@ -9,6 +9,7 @@ flask = "*"
 gunicorn = "*"
 keras-image-helper = "*"
 tensorflow-protobuf = "==2.7.0"
+protobuf = "==3.19.6"
 
 [dev-packages]
 
