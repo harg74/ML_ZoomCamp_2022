@@ -49,7 +49,6 @@ def prepare_request(X):
     pb_request.model_spec.name='clothing-model'
     pb_request.model_spec.signature_name='serving_default'
     pb_request.inputs['input_8'].CopyFrom(np_to_protobuf(X))
-
     return pb_request
 
 def prepare_response(pb_response):
