@@ -70,6 +70,6 @@ def predict_endopint():
 
 if __name__ =='__main__':
     app.run(debug=True, host='0.0.0.0', port=9696)
-    #url = url = 'http://bit.ly/mlbookcamp-pants'
-    #response = predict(url)
-    #print(response)
+    # url = url = 'http://bit.ly/mlbookcamp-pants'
+    # response = predict(url)
+    # print(response)
