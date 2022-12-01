@@ -1,12 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 import  grpc
-
 from tensorflow_serving.apis import predict_pb2
 from tensorflow_serving.apis import prediction_service_pb2_grpc
-
 from keras_image_helper import create_preprocessor
-
 from flask import Flask
 from flask import request
 from flask import jsonify
