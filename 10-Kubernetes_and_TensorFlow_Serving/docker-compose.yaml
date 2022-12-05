@@ -4,5 +4,7 @@ services:
     image: zoomcamp-10-model:xception-v4-001
   gateway:
     image: zoomcamp-10-gateway:001
+    environment:
+      - TF_SERVING_HOST=clothing-model:8500
     ports:
       - "9696:9696"

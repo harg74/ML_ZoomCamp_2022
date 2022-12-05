@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 import  grpc
+import os
 from tensorflow_serving.apis import predict_pb2
 from tensorflow_serving.apis import prediction_service_pb2_grpc
 from keras_image_helper import create_preprocessor
@@ -11,7 +12,8 @@ from flask import jsonify
 from proto import np_to_protobuf
 
 #where our tf-serving service is running. running in localhost inside docker
-host= 'localhost:8500'
+
+host = os.getenv('TF_SERVING_HOST', 'localhost:8500')
 
 #access the previous port, since we are running things locally we can use insecure channel
 #since it is running in kubernetes (gateway and tf-serving) tf-serving will not be accessible
