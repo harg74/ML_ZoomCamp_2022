@@ -1,0 +1,12 @@
+service: "service.py:svc"
+labels:
+  owner: hr
+  project: diamond_price_prediction
+include:
+  - "*.py"
+python:
+  packages:
+    - xgboost
+    - scikit-learn==1.1.1
+    - numpy==1.21.5
+    - pydantic==1.10.2

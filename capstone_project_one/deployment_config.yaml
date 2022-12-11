@@ -1,0 +1,9 @@
+api_version: v1
+name: diamond_price_prediction
+operator:
+  name: aws-lambda
+template: terraform
+spec:
+  region: us-east-1
+  timeout: 40
+  memory_size: 1000
