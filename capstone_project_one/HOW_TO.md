@@ -13,7 +13,11 @@ This will provide a model with a tag which will be used to build our bento image
 
 ![bento_model_tag](resources/model_tag.png)
 
-Before we can build our images, we need to create a bentofile.yaml specifiying the following:
+Before we can build our images
+
+Create a service.py file see: ![service.py file](service.py)
+
+Next step, we need to create a bentofile.yaml specifiying the following:
 
 - service: "service.py:svc" -> Determine the entry point and the variable name for the service. We wont have to specify it anymore since we have called it out in the service.
 
@@ -107,4 +111,4 @@ TF file exists in AWS, even when it is updated.
 
 ![endpoint](resources/endpoint.png)
 
-For more details and other deployment locations visit[the official bentoctl GitHub](https://github.com/bentoml/bentoctl)!
+For more details and other deployment locations visit [the official bentoctl GitHub](https://github.com/bentoml/bentoctl)!

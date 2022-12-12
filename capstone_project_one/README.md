@@ -6,7 +6,7 @@
 
 It forms deep in the earth under extreme heat and pressure. It’s ejected violently upward until it arrives at or near the earth’s surface. It’s forced from its hiding place by nature or by man. Then it’s cleaved and cut and polished until its natural beauty shines through. - https://www.gia.edu/diamond-history-lore </em>
 
-There are several aspects to take in consideration when buying a diamond. Specifically in our dataset these are the features analyzed:
+There are several aspects to take in consideration when buying a diamond. Specifically, in our dataset these were the features analyzed:
 
 - carat: weight of the diamond (0.2--5.01)
 - cut: quality of the cut (Fair, Good, Very Good, Premium, Ideal)
