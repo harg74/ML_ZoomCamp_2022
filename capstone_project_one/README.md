@@ -1,4 +1,6 @@
-# Car Price Prediction Project
+# Diamond Price Prediction Project
+
+![Diamonds](https://www.google.com/url?sa=i&url=https%3A%2F%2Fteamcoact.com%2Fblog%2F2019%2F07%2Fbecome-diamond-go-through-fire%2F&psig=AOvVaw39WiZG0Yuv-vf7IuLos-6V&ust=1670896515276000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKDTltz88vsCFQAAAAAdAAAAABAE)
 
 <em>Diamonds have a long history as beautiful objects of desire. In the first century AD, the Roman naturalist Pliny stated: “Diamond is the most valuable, not only of precious stones, but of all things in this world.
 
