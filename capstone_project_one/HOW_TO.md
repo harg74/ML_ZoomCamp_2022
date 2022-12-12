@@ -13,11 +13,11 @@ This will provide a model with a tag which will be used to build our bento image
 
 ![bento_model_tag](resources/model_tag.png)
 
-Before we can build our images
+Before we can build our images:
 
-Create a service.py file see: ![service.py file](service.py)
+1. Create a service.py file see: [service.py file](service.py)
 
-Next step, we need to create a bentofile.yaml specifiying the following:
+2. Next step, we need to create a bentofile.yaml specifiying the following:
 
 - service: "service.py:svc" -> Determine the entry point and the variable name for the service. We wont have to specify it anymore since we have called it out in the service.
 
@@ -39,7 +39,7 @@ Next step, we need to create a bentofile.yaml specifiying the following:
 
 ![bento_model_tag](resources/bentofile.png)
 
-Now we can build our deployable, from the CLI type:
+3. Now we can build our deployable, from the CLI type:
 
 `bentoml build`
 
@@ -52,7 +52,7 @@ This deployable includes all the things that we are going to need for a service 
 - python requirements
 - models -> where it shows our custom objects, where the DictVectorizer is stored
 
-Now we can build our Docker image:
+5. Now we can build our Docker image:
 
 `bentoml containerize <tag of your previous BentoML deployable you built>`
 
@@ -62,7 +62,7 @@ When it finishes, it will provide your Docker image with a command to run it loc
 
 In order to deploy to AWS Lambda we will use `bentoctl`. With this tool, we are able to deploy our bentos to a variety of different locations.
 
-First we will do:
+First we will install our tools needed. If you are in mac you can:
 
 `pip install bentoctl`
 `brew tap hashicorp/tap`
