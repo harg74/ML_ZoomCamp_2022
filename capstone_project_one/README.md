@@ -1,8 +1,8 @@
 # Car Price Prediction Project
 
-\*Diamonds have a long history as beautiful objects of desire. In the first century AD, the Roman naturalist Pliny stated: “Diamond is the most valuable, not only of precious stones, but of all things in this world.
+<em>Diamonds have a long history as beautiful objects of desire. In the first century AD, the Roman naturalist Pliny stated: “Diamond is the most valuable, not only of precious stones, but of all things in this world.
 
-It forms deep in the earth under extreme heat and pressure. It’s ejected violently upward until it arrives at or near the earth’s surface. It’s forced from its hiding place by nature or by man. Then it’s cleaved and cut and polished until its natural beauty shines through.\*
+It forms deep in the earth under extreme heat and pressure. It’s ejected violently upward until it arrives at or near the earth’s surface. It’s forced from its hiding place by nature or by man. Then it’s cleaved and cut and polished until its natural beauty shines through.</em>
 
 There are several aspects to take in consideration when buying a diamond. Specifically in our dataset these are the features analyzed:
 
@@ -52,8 +52,6 @@ You can use this API by opening [http://localhost:3000](http://localhost:3000) a
 
 By scrolling down you will find the **Service APIs**, click on the POST /predict arrow that faces down and click on "Try it out":
 
-![service2](resources/service2.png)
-
 Copy and paste the below code in the Request body and click on execute:
 
 ```json
@@ -70,12 +68,16 @@ Copy and paste the below code in the Request body and click on execute:
 }
 ```
 
+![service2](resources/service2.png)
+
 You will get the price predicted based on the features we passed to the model:
 
 ![service3](resources/service3.png)
 
-## Deployment in AWS
+## Deployment in AWS Lambda
 
-You can see a short demo of this car price prediction model deployed in AWS:
+You can see a short demo of this car price prediction model deployed in AWS Lambda:
 
 [![video](resources/video.png)](https://youtu.be/X14PdG2QVn8)
+
+In case you are interested how our Bento Model was containerized and deployed in AWS Lambda, you can view the [HOW_TO.md](HOW_TO.md)
