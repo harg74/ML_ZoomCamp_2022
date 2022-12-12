@@ -103,6 +103,8 @@ TF file exists in AWS, even when it is updated.
 
 `terraform apply -var-file=bentoctl.tfvars -auto-approve`
 
-5. Finally we will get our endpoint
+5. Finally we will get our endpoint:
 
 ![endpoint](resources/endpoint.png)
+
+For more details and other deployment locations visit[the official bentoctl GitHub](https://github.com/bentoml/bentoctl)!
