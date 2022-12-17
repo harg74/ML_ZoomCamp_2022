@@ -26,7 +26,7 @@ We applied to our dataset different machine learning models such as:
 - XGBoost
 - K-Nearest Neighbor Regressor
 
-This way, we were able to evaluate the best possible score/accuracy while predicting the value of cars. The main reasons for choosing this topic was because I wanted to know a little more about how the car market works, test our machine learning knowledge and ease the processs of acquiring a car.
+This way, we were able to evaluate the best possible score/accuracy while predicting the value of diamonds. The main reasons for choosing this topic was because I wanted to know a little more about how the diamond market works, test our machine learning knowledge and ease the processs of acquiring this precious stones.
 
 If you are interested, you can get the dataset here: [Diamonds Price Prediction Dataset](https://www.kaggle.com/datasets/shivam2503/diamonds).
 
@@ -78,7 +78,7 @@ You will get the price predicted based on the features we passed to the model:
 
 ## Deployment in AWS Lambda
 
-You can see a short demo of this car price prediction model deployed in AWS Lambda:
+You can see a short demo of this diamond price prediction model deployed in AWS Lambda:
 
 [![video](resources/video.png)](https://youtu.be/X14PdG2QVn8)
 
